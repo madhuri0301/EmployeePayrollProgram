@@ -24,10 +24,20 @@ VALUES ('Chetana PAtil', 15000.00 , '2021-03-14'),
 
 
 		Alter Table Employee_Payroll
-		Add Gender varchar(20);
+		Add gender varchar(20);
 
-UPDATE Employee_Payroll SET Gender ='F' WHERE employee_Name='Chetana Patil';
-UPDATE Employee_Payroll SET Gender ='M' WHERE employee_Name='Durgesh Patil';
-UPDATE Employee_Payroll SET Gender ='F' WHERE employee_Name='Madhuri Patil';
-UPDATE Employee_Payroll SET Gender ='M' WHERE employee_Name='Suhas Patil';
-UPDATE Employee_Payroll SET Gender ='F' WHERE employee_Name='Krishna Patil';
+UPDATE Employee_Payroll SET gender ='F' WHERE employee_Name='Chetana Patil';
+UPDATE Employee_Payroll SET gender ='M' WHERE employee_Name='Durgesh Patil';
+UPDATE Employee_Payroll SET gender ='F' WHERE employee_Name='Madhuri Patil';
+UPDATE Employee_Payroll SET gender ='M' WHERE employee_Name='Suhas Patil';
+UPDATE Employee_Payroll SET gender ='F' WHERE employee_Name='Krishna Patil';
+
+SELECT SUM(salary) FROM Employee_Payroll
+SELECT AVG(salary) FROM Employee_Payroll
+SELECT MIN(salary) FROM Employee_Payroll
+SELECT MAX(salary) FROM Employee_Payroll
+SELECT Count(employee_ID) FROM Employee_Payroll
+SELECT SUM(salary) FROM Employee_Payroll WHERE gender = 'F' GROUP BY Gender;
+SELECT SUM(salary) FROM Employee_Payroll WHERE gender = 'M' GROUP BY Gender;
+
+
