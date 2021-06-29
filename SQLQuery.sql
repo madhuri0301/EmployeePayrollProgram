@@ -18,3 +18,6 @@ VALUES ('Chetana PAtil', 15000.00 , '2021-03-14'),
 		('Krishna Patil',20000.00, '2021-06-07');
 
 		SELECT * FROM Employee_Payroll;
+
+		SELECT salary FROM Employee_Payroll WHERE employee_Name='Durgesh Patil'
+        SELECT salary FROM Employee_Payroll WHERE StartDate BETWEEN CAST('2021-03-01' as date) and GetDate();
