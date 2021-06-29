@@ -16,3 +16,5 @@ VALUES ('Chetana PAtil', 15000.00 , '2021-03-14'),
 		('Madhuri Patil',30000.00, '2021-01-03'),
 		('Suhas Patil',22000.00, '2021-12-23'),
 		('Krishna Patil',20000.00, '2021-06-07');
+
+		SELECT * FROM Employee_Payroll;
