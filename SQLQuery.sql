@@ -40,4 +40,10 @@ SELECT Count(employee_ID) FROM Employee_Payroll
 SELECT SUM(salary) FROM Employee_Payroll WHERE gender = 'F' GROUP BY Gender;
 SELECT SUM(salary) FROM Employee_Payroll WHERE gender = 'M' GROUP BY Gender;
 
+ALTER TABLE Employee_Payroll Add
+Phone_Number varchar(10),
+Department varchar(30),
+Address varchar(30),
+CONSTRAINT default_Address DEFAULT 'Maharashtra' FOR Address
+
 
