@@ -20,4 +20,14 @@ VALUES ('Chetana PAtil', 15000.00 , '2021-03-14'),
 		SELECT * FROM Employee_Payroll;
 
 		SELECT salary FROM Employee_Payroll WHERE employee_Name='Durgesh Patil'
-        SELECT salary FROM Employee_Payroll WHERE StartDate BETWEEN CAST('2021-03-01' as date) and GetDate();
+        SELECT salary FROM Employee_Payroll WHERE StartDate BETWEEN CAST('2021-01-03' as date) and GetDate();
+
+
+		Alter Table Employee_Payroll
+		Add Gender varchar(20);
+
+UPDATE Employee_Payroll SET Gender ='F' WHERE employee_Name='Chetana Patil';
+UPDATE Employee_Payroll SET Gender ='M' WHERE employee_Name='Durgesh Patil';
+UPDATE Employee_Payroll SET Gender ='F' WHERE employee_Name='Madhuri Patil';
+UPDATE Employee_Payroll SET Gender ='M' WHERE employee_Name='Suhas Patil';
+UPDATE Employee_Payroll SET Gender ='F' WHERE employee_Name='Krishna Patil';
