@@ -44,6 +44,14 @@ ALTER TABLE Employee_Payroll Add
 Phone_Number varchar(10),
 Department varchar(30),
 Address varchar(30),
-CONSTRAINT default_Address DEFAULT 'Maharashtra' FOR Address
+CONSTRAINT default_Address DEFAULT 'Maharashtra' FOR Address;
 
+UPDATE Employee_Payroll SET Address='Maharashtra';
+
+Alter Table Employee_Payroll Add
+basicPay float,
+deduction float,
+taxablePay float,
+incomeTax float,
+netPay float;
 
